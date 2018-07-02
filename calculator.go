@@ -5,10 +5,10 @@ import (
 	"strings"
 )
 
-type Calculate struct {
+type Calculator struct {
 }
 
-func (Calculate) sum(number string) int {
+func (Calculator) Sum(number string) int {
 	if strings.Contains(number, ",") {
 		numbers := strings.Split(number, ",")
 		sum := 0
