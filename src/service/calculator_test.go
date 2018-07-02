@@ -2,7 +2,7 @@ package service
 
 import "testing"
 
-func TestInputemplySholudOutputzero(t *testing.T) {
+func Test_Sum_Input_Emply_Sholud_Be_Zero(t *testing.T) {
 	cal := Calculator{}
 	result := cal.Sum("")
 	expected := 0
@@ -11,7 +11,7 @@ func TestInputemplySholudOutputzero(t *testing.T) {
 	}
 }
 
-func TestInput1SholudOutput1(t *testing.T) {
+func Test_Sum_Input_1_Sholud_Be_1(t *testing.T) {
 	cal := Calculator{}
 	result := cal.Sum("1")
 	expected := 1
@@ -20,7 +20,7 @@ func TestInput1SholudOutput1(t *testing.T) {
 	}
 }
 
-func TestInput1and2ShouldOutput3(t *testing.T) {
+func Test_Sum_Input_1_And_2_Should_Be_3(t *testing.T) {
 	cal := Calculator{}
 	result := cal.Sum("1,2")
 	expected := 3
