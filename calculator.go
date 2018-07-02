@@ -8,9 +8,9 @@ import (
 type Calculator struct {
 }
 
-func (Calculator) Sum(number string) int {
-	if strings.Contains(number, ",") {
-		numbers := strings.Split(number, ",")
+func (Calculator) Sum(numberText string) int {
+	if strings.Contains(numberText, ",") {
+		numbers := strings.Split(numberText, ",")
 		sum := 0
 		for _, value := range numbers {
 			n, _ := strconv.Atoi(value)
@@ -19,7 +19,7 @@ func (Calculator) Sum(number string) int {
 		return sum
 	}
 
-	if number == "1" {
+	if numberText == "1" {
 		return 1
 	}
 	return 0
